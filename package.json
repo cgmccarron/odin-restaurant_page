@@ -1,0 +1,23 @@
+{
+  "name": "odin-restaurant_page",
+  "version": "1.0.0",
+  "description": "A simple resturant page for the Odin Project ",
+  "main": "index.js",
+  "scripts": {
+    "test": "run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cgmccarron/odin-restaurant_page.git"
+  },
+  "author": "Cgmccarron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cgmccarron/odin-restaurant_page/issues"
+  },
+  "homepage": "https://github.com/cgmccarron/odin-restaurant_page#readme",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
