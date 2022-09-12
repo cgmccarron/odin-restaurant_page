@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 20vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.navbar {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  padding: 0 5%;
+  margin: 0 1%;
+  height: 100%;
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  background-color: green;
+  border-radius: 5%;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  height: 80vh;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab {
+  border: 1px center black;
+  border-radius: 5%;
+  background-color: darkmagenta;
+  height: 75vh;
+  width: 64vw;
+}
