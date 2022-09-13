@@ -1,14 +1,9 @@
+import navbar_div from "./navbar";
+const navbar = navbar_div();
 const header_div = () => {
   const header = document.createElement("div");
-  header.id = "header";
-
-  header.style.height = "20vh";
-  header.style.width = "100%";
-  header.style.backgroundColor = "black";
-  header.style.color = "white";
-
-  header.textContent = "This is the header";
-
+  header.classList.add("header");
+  header.appendChild(navbar);
   return header;
 };
 

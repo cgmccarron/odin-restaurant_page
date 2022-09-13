@@ -16,7 +16,27 @@
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst header_div = () => {\r\n  const header = document.createElement(\"div\");\r\n  header.id = \"header\";\r\n\r\n  header.style.height = \"20vh\";\r\n  header.style.width = \"100%\";\r\n  header.style.backgroundColor = \"black\";\r\n  header.style.color = \"white\";\r\n\r\n  header.textContent = \"This is the header\";\r\n\r\n  return header;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (header_div);\r\n\n\n//# sourceURL=webpack://odin-restaurant_page/./src/components/header.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navbar */ \"./src/components/navbar.js\");\n\r\nconst navbar = (0,_navbar__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\nconst header_div = () => {\r\n  const header = document.createElement(\"div\");\r\n  header.classList.add(\"header\");\r\n  header.appendChild(navbar);\r\n  return header;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (header_div);\r\n\n\n//# sourceURL=webpack://odin-restaurant_page/./src/components/header.js?");
+
+/***/ }),
+
+/***/ "./src/components/links.js":
+/*!*********************************!*\
+  !*** ./src/components/links.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst links_div = () => {\r\n  const links = document.createElement(\"a\");\r\n  links.classList.add(\"link\");\r\n  links.textContent = \" LINKS\";\r\n  return links;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (links_div);\r\n\n\n//# sourceURL=webpack://odin-restaurant_page/./src/components/links.js?");
+
+/***/ }),
+
+/***/ "./src/components/navbar.js":
+/*!**********************************!*\
+  !*** ./src/components/navbar.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _links__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./links */ \"./src/components/links.js\");\n\r\n\r\nconst navbar_div = () => {\r\n  const navbar = document.createElement(\"div\");\r\n  navbar.classList.add(\"navbar\");\r\n  let home = (0,_links__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n  let menu = (0,_links__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n  let order = (0,_links__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n  navbar.appendChild(home);\r\n  navbar.appendChild(menu);\r\n  navbar.appendChild(order);\r\n\r\n  return navbar;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (navbar_div);\r\n\n\n//# sourceURL=webpack://odin-restaurant_page/./src/components/navbar.js?");
 
 /***/ }),
 
@@ -26,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header */ \"./src/components/header.js\");\n\r\n\r\nconst header = (0,_components_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\nconsole.log(\"header not working\");\r\nconst page = document.getElementById(\"content\");\r\n\n\n//# sourceURL=webpack://odin-restaurant_page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header */ \"./src/components/header.js\");\n\r\n\r\nconst header = (0,_components_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\nconsole.log(\"header not working\");\r\ndocument.body.appendChild(header);\r\n\n\n//# sourceURL=webpack://odin-restaurant_page/./src/index.js?");
 
 /***/ })
 
