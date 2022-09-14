@@ -1,7 +1,7 @@
-const links_div = () => {
+const links_div = (title) => {
   const links = document.createElement("a");
   links.classList.add("link");
-  links.textContent = " LINKS";
+  links.textContent = title;
   return links;
 };
 

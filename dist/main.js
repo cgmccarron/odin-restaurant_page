@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst links_div = () => {\r\n  const links = document.createElement(\"a\");\r\n  links.classList.add(\"link\");\r\n  links.textContent = \" LINKS\";\r\n  return links;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (links_div);\r\n\n\n//# sourceURL=webpack://odin-restaurant_page/./src/components/links.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst links_div = (title) => {\r\n  const links = document.createElement(\"a\");\r\n  links.classList.add(\"link\");\r\n  links.textContent = title;\r\n  return links;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (links_div);\r\n\n\n//# sourceURL=webpack://odin-restaurant_page/./src/components/links.js?");
 
 /***/ }),
 
@@ -36,7 +36,27 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _links__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./links */ \"./src/components/links.js\");\n\r\n\r\nconst navbar_div = () => {\r\n  const navbar = document.createElement(\"div\");\r\n  navbar.classList.add(\"navbar\");\r\n  let home = (0,_links__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n  let menu = (0,_links__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n  let order = (0,_links__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n  navbar.appendChild(home);\r\n  navbar.appendChild(menu);\r\n  navbar.appendChild(order);\r\n\r\n  return navbar;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (navbar_div);\r\n\n\n//# sourceURL=webpack://odin-restaurant_page/./src/components/navbar.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _links__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./links */ \"./src/components/links.js\");\n\r\n\r\nconst navbar_div = () => {\r\n  const navbar = document.createElement(\"div\");\r\n  navbar.classList.add(\"navbar\");\r\n  let home = (0,_links__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\"Home\");\r\n  let menu = (0,_links__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\"Menu\");\r\n  let order = (0,_links__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\"Order\");\r\n  navbar.appendChild(home);\r\n  navbar.appendChild(menu);\r\n  navbar.appendChild(order);\r\n\r\n  return navbar;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (navbar_div);\r\n\n\n//# sourceURL=webpack://odin-restaurant_page/./src/components/navbar.js?");
+
+/***/ }),
+
+/***/ "./src/components/page.js":
+/*!********************************!*\
+  !*** ./src/components/page.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _tab__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tab */ \"./src/components/tab.js\");\n\r\nconst tab = (0,_tab__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\nconst main_div = () => {\r\n  const page = document.createElement(\"div\");\r\n\r\n  page.classList.add(\"main\");\r\n  page.appendChild(tab);\r\n\r\n  return page;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (main_div);\r\n\n\n//# sourceURL=webpack://odin-restaurant_page/./src/components/page.js?");
+
+/***/ }),
+
+/***/ "./src/components/tab.js":
+/*!*******************************!*\
+  !*** ./src/components/tab.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst tab_div = () => {\r\n  const tab = document.createElement(\"div\");\r\n  tab.classList.add(\"tab\");\r\n\r\n  return tab;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tab_div);\r\n\n\n//# sourceURL=webpack://odin-restaurant_page/./src/components/tab.js?");
 
 /***/ }),
 
@@ -46,7 +66,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header */ \"./src/components/header.js\");\n\r\n\r\nconst header = (0,_components_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\nconsole.log(\"header not working\");\r\ndocument.body.appendChild(header);\r\n\n\n//# sourceURL=webpack://odin-restaurant_page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header */ \"./src/components/header.js\");\n/* harmony import */ var _components_page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/page */ \"./src/components/page.js\");\n/* harmony import */ var _pages_home_home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/home/home */ \"./src/pages/home/home.js\");\n\r\n\r\n\r\n\r\nconst content = document.getElementById(\"content\");\r\nconst header = (0,_components_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\nconst main = (0,_components_page__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\nconst home = (0,_pages_home_home__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\nmain.firstChild.appendChild(home.title);\r\nmain.firstChild.appendChild(home.blurb);\r\nmain.firstChild.appendChild(home.pic);\r\ncontent.appendChild(header);\r\ncontent.appendChild(main);\r\n\n\n//# sourceURL=webpack://odin-restaurant_page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/pages/home/home.js":
+/*!********************************!*\
+  !*** ./src/pages/home/home.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst home_div = () => {\r\n  const title = document.createElement(\"h1\");\r\n  title.classList.add(\"diner-sign\");\r\n  title.innerText = \"Diner on 6th\";\r\n\r\n  const blurb = document.createElement(\"div\");\r\n  blurb.classList.add(\"blurb\");\r\n  blurb.innerText =\r\n    \"Classic and delicous steak burgers, hot fries, and creamy milkshakes! Since the 1950s we have been delivery great food and great serivce to our community\";\r\n\r\n  const pic = document.createElement(\"div\");\r\n  pic.classList.add(\"pic\");\r\n  const image = document.createElement(\"img\");\r\n  image.src = \"/src/assets/images/platter.jpg\";\r\n\r\n  pic.appendChild(image);\r\n\r\n  return { title, blurb, pic };\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (home_div);\r\n\n\n//# sourceURL=webpack://odin-restaurant_page/./src/pages/home/home.js?");
 
 /***/ })
 
