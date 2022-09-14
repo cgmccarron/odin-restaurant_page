@@ -1,11 +1,13 @@
 import header_div from "./components/header";
 import main_div from "./components/page";
 import home_div from "./pages/home/home";
+import menu_div from "./pages/menu/menu";
 
 const content = document.getElementById("content");
 const header = header_div();
 const main = main_div();
 const home = home_div();
+const menu = menu_div();
 
 content.appendChild(header);
 content.appendChild(main);
@@ -22,6 +24,9 @@ const set_tab = (tab_selector) => {
       main.firstChild.appendChild(home.title);
       main.firstChild.appendChild(home.blurb);
       main.firstChild.appendChild(home.pic);
+      break;
+    case "Menu":
+      main.firstChild.appendChild(menu);
       break;
   }
 };
